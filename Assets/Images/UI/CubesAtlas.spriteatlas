@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CubesAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: b6246c0002f2ee44e9f06b8d7bd62cdf, type: 3}
+    - {fileID: 2800000, guid: 3434b71bc2e704b488ebee6e94b8d71a, type: 3}
+    - {fileID: 2800000, guid: 8e4801c2f59c3354685650702e759287, type: 3}
+    - {fileID: 2800000, guid: 65ece0f1fc15d954abf5f9dd9692c6d1, type: 3}
+    - {fileID: 2800000, guid: b4cab59e14fe88b468941e70e7337a85, type: 3}
+    - {fileID: 2800000, guid: 51e9678b72b2c774490c5d16c906049f, type: 3}
+    - {fileID: 2800000, guid: 82daf52330fc5f14eac599a7c544e499, type: 3}
+    - {fileID: 2800000, guid: 3c812b4b427299049b2f2fc6f3bf4a34, type: 3}
+    - {fileID: 2800000, guid: 482378823beb7bb4b8b24901abc6116d, type: 3}
+    - {fileID: 2800000, guid: 02053a03d3f68d84a865f4cce989d389, type: 3}
+    - {fileID: 2800000, guid: 90c844314ee17254eaf5cdfde6de6617, type: 3}
+    - {fileID: 2800000, guid: 950422a3395b53d4a93a292f7d73a86e, type: 3}
+    - {fileID: 2800000, guid: a2987389d8ff28841b150f014f02ccfb, type: 3}
+    - {fileID: 2800000, guid: 4874227b851fb3c4a9b81469172c7ba6, type: 3}
+    - {fileID: 2800000, guid: 758e3293a8cd4a342b9be96ab252f768, type: 3}
+    - {fileID: 2800000, guid: 50f0e16a33f03fb43a4b1c88bad45ad8, type: 3}
+    - {fileID: 2800000, guid: 1f7a537fde3e9fa4b8b79263cc8f1fd8, type: 3}
+    - {fileID: 2800000, guid: a25898bc7987fad499334e220555ba83, type: 3}
+    - {fileID: 2800000, guid: 05f57348331cfb64188a905fda674a71, type: 3}
+    - {fileID: 2800000, guid: 7d7365570ace1b848b555f43dfb44cd5, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys: []
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites: []
+  m_PackedSpriteNamesToIndex: []
+  m_RenderDataMap: {}
+  m_Tag: CubesAtlas
+  m_IsVariant: 0

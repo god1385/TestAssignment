@@ -81,7 +81,7 @@ public class ConstructTower : MonoBehaviour, IDropHandler
         var draggedCube = eventData.pointerDrag?.GetComponent<CubeToDrag>();
         if (!_towerData.CanAcceptCube(draggedCube)) return;
 
-        if (cubeViewSize == Vector2.zero) cubeViewSize = draggedCube.GetComponent<RectTransform>().rect.size;
+        if (cubeViewSize == Vector2.zero || _towerData.TopCube == null) cubeViewSize = draggedCube.GetComponent<RectTransform>().rect.size;
 
         var cube = SpawnTowerCube(draggedCube);
         Vector2 mousePos = GetMouseDropPosition(eventData, cube.Rect, zoneToPlaceCubes);

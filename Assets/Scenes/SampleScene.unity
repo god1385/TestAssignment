@@ -610,6 +610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameConfig: {fileID: 11400000, guid: 105a110ab597ab04bb8e4adc5f3d91e9, type: 2}
+  cubePlacementZone: {fileID: 699706777}
 --- !u!1 &699706776
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,10 +701,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoneToPlaceCubes: {fileID: 699706777}
   holeZone: {fileID: 1970905219}
-  heightFactor: 0.1
+  prefabToSpawnForTower: {fileID: 2082743812953851016, guid: aa9a045fbf12eab468e266aa9839d018, type: 3}
   cubeSpawnHeight: 50
   cubeFallDuration: 1
-  prefabToSpawnForTower: {fileID: 2082743812953851016, guid: aa9a045fbf12eab468e266aa9839d018, type: 3}
 --- !u!1 &700199513
 GameObject:
   m_ObjectHideFlags: 0

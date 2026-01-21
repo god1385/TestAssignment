@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class CubePlacementRules : ICubePlacement
 {
-    public bool CanCubeBePlaced(CubeView currentCube, CubeView topCube) => true;
+    public bool CanCubeBePlaced(CubeModel cubeData, TowerCube? topCube) => true;
 }
 
 public class CubePlacementRulesWithColor : ICubePlacement
 {
-    public bool CanCubeBePlaced(CubeView currentCube, CubeView topCube)
+    public bool CanCubeBePlaced(CubeModel cubeData, TowerCube? topCube)
     {
-        if (topCube == null) return true;
+        if (!topCube.HasValue) return true;
 
-        return currentCube.CubeSprite == topCube.CubeSprite;
+        return cubeData.CubeSprite == topCube.Value.CubeSprite;
     }
 }

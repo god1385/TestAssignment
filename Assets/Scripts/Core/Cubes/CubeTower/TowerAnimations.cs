@@ -7,23 +7,23 @@ public static class TowerAnimations
     public static Tween AnimateDrop(CubeView cube, Vector2 targetPos, float jumpHeight, float duration)
     {
         bool isUnlocked = false;
-        cube.CubeToDrag.LockInteraction();
+        cube.DraggableCube.LockInteraction();
         cube.Rect.anchoredPosition = new Vector2(targetPos.x, targetPos.y + jumpHeight);
         return cube.Rect.DOAnchorPos(targetPos, duration).SetEase(Ease.OutBounce).OnComplete(() =>
         {
-            cube.CubeToDrag.UnlockInteraction();
+            cube.DraggableCube.UnlockInteraction();
             isUnlocked = true;
         })
         .OnKill(() =>
         {
             if (!isUnlocked)
-                cube.CubeToDrag.UnlockInteraction();
+                cube.DraggableCube.UnlockInteraction();
         });
     }
 
     public static void FadeAndDestroy(CubeView cube)
     {
-        cube.CubeToDrag.LockInteraction();
+        cube.DraggableCube.LockInteraction();
         cube.Rect.DOScale(0f, 0.5f).SetEase(Ease.InBack).OnComplete(() =>
         {
             Object.Destroy(cube.gameObject);
@@ -35,7 +35,7 @@ public static class TowerAnimations
         bool isUnlocked = false;
         Sequence seq = DOTween.Sequence();
 
-        cube.CubeToDrag.LockInteraction();
+        cube.DraggableCube.LockInteraction();
         var rect = cube.Rect;
 
         seq.Join(rect.DOAnchorPos(new Vector2(rect.anchoredPosition.x, -500f), fallDuration).SetEase(Ease.InQuad));
@@ -44,14 +44,14 @@ public static class TowerAnimations
 
         seq.OnComplete(() =>
         {
-            cube.CubeToDrag.UnlockInteraction();
+            cube.DraggableCube.UnlockInteraction();
             isUnlocked = true;
             Object.Destroy(rect.gameObject);
         })
         .OnKill(() =>
         {
             if (!isUnlocked)
-                cube.CubeToDrag.UnlockInteraction();
+                cube.DraggableCube.UnlockInteraction();
         });
     }
 }

@@ -23,7 +23,7 @@ public class TowerSaveData
         {
             _data.Cubes.Add(new CubeSaveData
             {
-                CubeId = cube.CubeToDrag.CubeSprite.name,
+                CubeId = cube.DraggableCube.CubeSprite.name,
                 OffsetX = cube.Rect.anchoredPosition.x,
                 OffsetY = cube.Rect.anchoredPosition.y
             });
@@ -58,4 +58,5 @@ public class CubeSaveData
     public string CubeId;
     public float OffsetX;
     public float OffsetY;
+    public string SpriteName;
 }

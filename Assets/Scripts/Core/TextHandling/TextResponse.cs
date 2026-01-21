@@ -47,7 +47,6 @@ public class TextResponse : MonoBehaviour
         _cancellationTokenSourceIdle?.Cancel();
         _cancellationTokenSourceIdle = new();
 
-        Debug.Log(type.ToString());
         localizedString.StringReference.TableEntryReference = type.ToString();
 
         _ = PlayTextAnim(localizedString.StringReference.GetLocalizedString(), _cancellationTokenSource.Token);

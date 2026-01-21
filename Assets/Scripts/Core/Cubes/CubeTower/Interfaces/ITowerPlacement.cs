@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface ITowerPlacement
 {
-    public PlaceResult TryPlace(CubeView cube, Vector2 mousePos, CubeView topCube, out Vector2 dropPos);
+    public PlaceResult TryPlace(TowerState state, Vector2 mousePos, CubeModel cube, Vector2 cubeSize, out Vector2 dropPos);
 }

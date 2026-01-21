@@ -85,11 +85,3 @@ JSON save system
 ## Removing cubes
 
 ![Removing cube](Gifs/HoleThrow.gif)
-
-Если хочешь, дальше можем:
-
-🔍 сделать архитектурный self-review под HR
-
-📝 добавить “What I’d improve next” (очень любят на ревью)
-
-✅ или ужать это до 5–6 bullet points для README.md

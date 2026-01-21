@@ -2,6 +2,16 @@
 2d Project with Drag&amp;Drop
 Unity Version - 2022.3.62f3 LTS
 
+🎥 Demo
+
+## Placing cubes
+
+![Placing cube](Gifs/DefaultMechanic.gif)
+
+## Removing cubes
+
+![Removing cube](Gifs/HoleThrow.gif)
+
 🧱 Tower Cubes
 
 A small Unity project that implements a drag & drop tower-building mechanic with cube removal and animated tower rebuild.
@@ -75,13 +85,3 @@ DOTween
 Zenject (DI)
 
 JSON save system
-
-🎥 Demo
-
-## Placing cubes
-
-![Placing cube](Gifs/DefaultMechanic.gif)
-
-## Removing cubes
-
-![Removing cube](Gifs/HoleThrow.gif)
